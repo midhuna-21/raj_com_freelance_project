@@ -156,7 +156,7 @@ export const HeroSection = ({ scrollToServices, scrollToContact }: HeroSectionPr
                                             </div>
                                         </div>
                                         <div className="text-2xl md:text-3xl font-bold text-white absolute bottom-0 pb-4">
-                                            RJ HARDWARE
+                                            RJA HARDWARE
                                         </div>
                                     </div>
                                 </div>

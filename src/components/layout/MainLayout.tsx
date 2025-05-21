@@ -46,7 +46,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                             </div>
                             <div className="flex items-center">
                                 <MapPin className="h-4 w-4 mr-2" />
-                                <span>Rj Computer System PO Box: 111013 , Dubai</span>
+                                <span>RJA Computer System PO Box: 111013 , Dubai</span>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                             <Link to="/" className="flex items-center">
                                 <AnimatedLogo />
                                 <div className="ml-2">
-                                    <span className="block text-xl font-bold text-white">RJ COMPUTER SYSTEMS</span>
+                                    <span className="block text-xl font-bold text-white">RJA COMPUTER SYSTEMS</span>
                                     <span className="block text-xs text-gray-300">HARDWARE & SOFTWARE TRADING L.L.C</span>
                                 </div>
                             </Link>
@@ -175,11 +175,11 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                                     </div>
                                     <div className="flex items-center text-sm text-gray-400">
                                         <Mail className="h-4 w-4 mr-2" />
-                                        <span>info@rjnetworks.com</span>
+                                        <span>rjanetworkllc@gmail.com</span>
                                     </div>
                                     <div className="flex items-center text-sm text-gray-400">
                                         <MapPin className="h-4 w-4 mr-2" />
-                                        <span>Rj Computer System PO Box: 111013 , Dubai</span>
+                                        <span>RJA Computer System PO Box: 111013 , Dubai</span>
                                     </div>
                                 </div>
 
@@ -219,7 +219,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         <div className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-                            <h3 className="text-xl font-semibold mb-4">RJ Hardware</h3>
+                            <h3 className="text-xl font-semibold mb-4">RJA Hardware</h3>
                             <p className="text-gray-300">
                                 Global provider of computer hardware, networking equipment, and software solutions for businesses of all sizes.
                             </p>
@@ -261,7 +261,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                             <ul className="space-y-2 text-gray-300">
                                 <li className="flex items-center hover:text-white transition-colors duration-300">
                                     <MapPin className="mr-2 h-5 w-5" />
-                                    <span>Rj Computer System PO Box: 111013 , Dubai</span>
+                                    <span>RJA Computer System PO Box: 111013 , Dubai</span>
                                 </li>
                                 <li className="flex items-center hover:text-white transition-colors duration-300">
                                     <Phone className="mr-2 h-5 w-5" />
@@ -269,13 +269,13 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                                 </li>
                                 <li className="flex items-center hover:text-white transition-colors duration-300">
                                     <Mail className="mr-2 h-5 w-5" />
-                                    <span>info@rjnetworks.com</span>
+                                    <span>info@rjanetworks.com</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-                        <p>&copy; {new Date().getFullYear()} RJ Computer System & Hardware Trading LLC. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} RJA Computer System & Hardware Trading LLC. All rights reserved.</p>
                     </div>
                 </div>
             </footer>

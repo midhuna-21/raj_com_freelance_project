@@ -21,7 +21,7 @@ export const AnimatedLogo = () => {
                         <line x1="2" y1="14" x2="4" y2="14"></line>
                     </svg>
                 </div>
-                {/* <span className="relative z-10">RJ</span> */}
+                {/* <span className="relative z-10">RJA</span> */}
             </div>
         </div>
     );

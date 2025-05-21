@@ -42,7 +42,7 @@ const About = () => {
         try {
             // Create blob with sample content
             const projectData = {
-                name: "RJ Networks",
+                name: "RJA Networks",
                 version: "1.0.0",
                 description: "Premium hardware solutions"
             };
@@ -55,7 +55,7 @@ const About = () => {
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = url;
-            link.download = 'rj-networks-project.zip';
+            link.download = 'raj-networks-project.zip';
             document.body.appendChild(link);
             link.click();
 
@@ -100,7 +100,7 @@ const About = () => {
                             Our Story
                         </div>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400 mb-6">
-                            About RJ Networks
+                            About RAJ Networks
                         </h1>
                         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                             Your trusted partner in premium computer hardware solutions since 2005.
@@ -165,7 +165,7 @@ const About = () => {
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our History</h2>
                             <p className="text-lg text-gray-300 mb-6">
-                                Founded in 2005, RJ Computer System & Software Trading LLC began as a small IT solutions provider in Dubai. With a vision to deliver high-quality technology products and services globally, we've steadily grown our operations and expanded our reach.
+                                Founded in 2005, RAJ Computer System & Software Trading LLC began as a small IT solutions provider in Dubai. With a vision to deliver high-quality technology products and services globally, we've steadily grown our operations and expanded our reach.
                             </p>
                             <p className="text-lg text-gray-300 mb-6">
                                 Over the years, we've formed strong partnerships with leading technology manufacturers and software developers, allowing us to provide our clients with the best solutions tailored to their specific needs.
@@ -225,7 +225,7 @@ const About = () => {
                     <div className="max-w-4xl mx-auto mb-12 opacity-0 transform translate-y-8 transition-all duration-1000">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Core Values</h2>
                         <p className="text-xl text-gray-100/80">
-                            The principles that guide everything we do at RJ Networks
+                            The principles that guide everything we do at RAJ Networks
                         </p>
                     </div>
 
@@ -339,7 +339,7 @@ const About = () => {
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Why Choose Us?</h2>
                         <p className="text-xl text-gray-300">
-                            What sets RJ Networks apart in the hardware solutions industry
+                            What sets RAJ Networks apart in the hardware solutions industry
                         </p>
                     </div>
 
