@@ -103,7 +103,7 @@ const Contact = () => {
                         <ContactCard
                             icon={<Clock className="h-10 w-10" />}
                             title="Business Hours"
-                            details={["Monday-Friday: 9am - 6pm", "Saturday: 10am - 2pm"]}
+                            details={["Open 24 Hours"]}
                             delay={300}
                         />
                     </div>
