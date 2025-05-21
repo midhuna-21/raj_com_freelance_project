@@ -42,7 +42,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                         <div className="flex items-center space-x-6 text-sm">
                             <div className="flex items-center">
                                 <Clock className="h-4 w-4 mr-2" />
-                                <span>Mon-Sun: 8am - 6pm</span>
+                                <span>Open 24/7</span>
                             </div>
                             <div className="flex items-center">
                                 <MapPin className="h-4 w-4 mr-2" />
@@ -68,7 +68,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                         </div>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden lg:flex items-center space-x-8">
+                      <div className="hidden lg:flex items-center space-x-8 pr-8">
                             <Link to="/" className="text-gray-200 hover:text-blue-400 font-medium transition-colors duration-300 flex items-center">
                                 <Monitor className="mr-1 h-4 w-4" />
                                 Home
@@ -84,9 +84,9 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
 
 
-                            <Button asChild className="bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 shadow-md">
+                            {/* <Button asChild className="bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 shadow-md">
                                 <Link to="/contact">Request Hardware Quote</Link>
-                            </Button>
+                            </Button> */}
                         </div>
 
                         {/* Mobile menu button */}

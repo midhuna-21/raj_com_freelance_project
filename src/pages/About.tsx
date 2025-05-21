@@ -384,46 +384,7 @@ const About = () => {
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="py-16 bg-gradient-to-r from-blue-900 to-green-900 text-white relative overflow-hidden">
-                {/* Decorative circuit pattern */}
-                <div className="absolute inset-0 opacity-10">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                        <pattern id="circuit-cta" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                            <path d="M0 50 H100 M50 0 V100 M25 25 H75 M25 75 H75" stroke="white" strokeWidth="1" fill="none" />
-                            <circle cx="50" cy="50" r="3" fill="white" />
-                            <circle cx="25" cy="25" r="2" fill="white" />
-                            <circle cx="75" cy="75" r="2" fill="white" />
-                        </pattern>
-                        <rect width="100%" height="100%" fill="url(#circuit-cta)" />
-                    </svg>
-                </div>
-
-                <div className="container mx-auto px-4 relative z-10 text-center">
-                    <div className="max-w-3xl mx-auto">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Hardware?</h2>
-                        <p className="text-xl mb-8">
-                            Partner with RAJ Networks for premium computer hardware solutions that will transform your business operations.
-                        </p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-gray-100">
-                                <Link to="/products">Explore Our Products</Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="border-2">
-                                <Link to="/contact" className="flex items-center">Contact Us <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                            </Button>
-                            <Button
-                                onClick={handleDownload}
-                                variant="download"
-                                size="lg"
-                                className="flex items-center"
-                            >
-                                <Download className="mr-2 h-4 w-4" /> Download Source
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         
         </MainLayout>
     );
 };

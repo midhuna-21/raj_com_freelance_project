@@ -235,65 +235,45 @@ const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
                         </p>
                     </motion.div>
 
-                    <motion.div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.1 }}
-                    >
-                        {productCategories.map((category) => (
-                            <motion.div
-                                key={category.id}
-                                variants={itemVariants}
-                                className="group"
-                                whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                            >
-                                <Card className="h-full bg-slate-800/50 border-slate-700 overflow-hidden hover:border-blue-500 transition-all duration-300">
-                                    <div className="h-48 bg-slate-700 relative overflow-hidden">
-                                        {/* Hardware themed pattern background for images */}
-                                        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900">
-                                            <div className="absolute inset-0 animate-scan bg-gradient-to-b from-transparent via-blue-500/10 to-transparent" style={{ height: '200%', top: '-100%' }}></div>
+                  <motion.div
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+  variants={containerVariants}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.1 }}
+>
+  {productCategories.map((category) => (
+    <motion.div
+      key={category.id}
+      variants={itemVariants}
+      className="group p-1"
+      whileHover={{ y: -5, transition: { duration: 0.2 } }}
+    >
+      <Card className="border-slate-700/50 bg-slate-800/50 overflow-hidden relative">
+        <div className="relative aspect-square overflow-hidden">
+          <img
+            src={category.image}
+            alt={category.name}
+            className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+          />
+          {/* Stronger overlay for better text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 to-transparent flex items-end">
+            <div className="p-4 w-full">
+              {category.popular && (
+                <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md z-10">
+                  Popular
+                </div>
+              )}
+              <h3 className="text-lg font-semibold text-white">{category.name}</h3>
+              <p className="text-sm text-gray-300">{category.description}</p>
+            </div>
+          </div>
+        </div>
+      </Card>
+    </motion.div>
+  ))}
+</motion.div>
 
-                                           <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-blue-400 shadow-md">
-    <img
-        src={category.image}
-        alt={category.name}
-        className="w-full h-full object-cover"
-    />
-</div>
-
-                                        </div>
-
-                                        {category.popular && (
-                                            <div className="absolute top-2 right-2 bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-md">
-                                                Popular
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    <CardHeader>
-                                        <CardTitle className="text-white group-hover:text-blue-400 transition-colors">
-                                            {category.name}
-                                        </CardTitle>
-                                        <CardDescription className="text-gray-400">
-                                            {category.description}
-                                        </CardDescription>
-                                    </CardHeader>
-
-                                    {/* <CardFooter>
-                                        <Button
-                                            variant="outline"
-                                            className="w-full border-slate-700 hover:bg-blue-600 hover:text-white hover:border-blue-600"
-                                            onClick={() => handleCategoryClick(category.id)}
-                                        >
-                                            {selectedCategory === category.id ? 'Hide Details' : 'View Details'}
-                                        </Button>
-                                    </CardFooter> */}
-                                </Card>
-                            </motion.div>
-                        ))}
-                    </motion.div>
                 </div>
             </section>
             {/* Gallery Section */}
@@ -623,49 +603,7 @@ const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section ref={contactRef} className="py-20 bg-gradient-to-r from-blue-900 to-green-900 text-white relative overflow-hidden" id="contact">
-                {/* Hardware-inspired decorative elements */}
-                <div className="absolute top-0 left-0 w-full h-20 opacity-10">
-                    <svg width="100%" height="100%" viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0,0 L0,100 L1000,100 L1000,0 L0,0 Z" fill="none" stroke="white" strokeWidth="2"></path>
-                        {[...Array(20)].map((_, i) => (
-                            <rect key={i} x={i * 50} y="0" width="2" height="30" fill="white" />
-                        ))}
-                        {[...Array(10)].map((_, i) => (
-                            <circle key={i} cx={i * 100 + 50} cy="50" r="5" fill="white" />
-                        ))}
-                    </svg>
-                </div>
-                <div className="absolute bottom-0 left-0 w-full h-20 opacity-10">
-                    <svg width="100%" height="100%" viewBox="0 0 1000 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0,0 L0,100 L1000,100 L1000,0 L0,0 Z" fill="none" stroke="white" strokeWidth="2"></path>
-                        {[...Array(20)].map((_, i) => (
-                            <rect key={i} x={i * 50} y="70" width="2" height="30" fill="white" />
-                        ))}
-                        {[...Array(10)].map((_, i) => (
-                            <circle key={i} cx={i * 100 + 50} cy="50" r="5" fill="white" />
-                        ))}
-                    </svg>
-                </div>
-
-                <div className="container mx-auto px-4 relative z-10">
-                    <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fade-in">Ready to Upgrade Your Hardware?</h2>
-                        <p className="text-xl mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
-                            Contact our team of hardware experts today and discover the perfect technology solutions for your business.
-                        </p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
-                            <Button asChild size="lg" variant="secondary" className="px-8 shadow-lg transform hover:scale-105 transition-all duration-300 bg-white text-blue-900 hover:bg-gray-100">
-                                <Link to="/contact">Get Hardware Quote</Link>
-                            </Button>
-                            <Button asChild size="lg" variant="outline" className="px-8 bg-transparent border-2 border-white text-white hover:bg-white/10">
-                                <Link to="/contact">Schedule a Consultation</Link>
-                            </Button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+         
         </MainLayout>
     );
 };

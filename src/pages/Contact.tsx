@@ -91,7 +91,7 @@ const Contact = () => {
                         <ContactCard
                             icon={<Phone className="h-10 w-10" />}
                             title="Phone"
-                            details={["+9714 396 8383", "+9714 3978172"]}
+                            details={["+9710563861260", "+9710566930268"]}
                             delay={100}
                         />
                         <ContactCard
@@ -200,38 +200,7 @@ const Contact = () => {
                 </div>
             </section>
 
-            {/* Call to Action */}
-            <section className="py-16 bg-gradient-to-r from-blue-900 to-slate-900 relative overflow-hidden">
-                {/* Circuit pattern background */}
-                <div className="absolute inset-0 opacity-10">
-                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                        <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-                            <path d="M0 50 H100 M50 0 V100 M25 25 H75 M25 75 H75" stroke="white" strokeWidth="0.5" fill="none" />
-                            <circle cx="50" cy="50" r="3" fill="white" />
-                            <circle cx="25" cy="25" r="2" fill="white" />
-                            <circle cx="75" cy="75" r="2" fill="white" />
-                            <circle cx="75" cy="25" r="2" fill="white" />
-                            <circle cx="25" cy="75" r="2" fill="white" />
-                        </pattern>
-                        <rect width="100%" height="100%" fill="url(#circuit)" />
-                    </svg>
-                </div>
-
-                {/* Animated elements */}
-                <div className="absolute top-1/4 left-10 w-24 h-24 rounded-full bg-blue-600/20 animate-pulse-slow"></div>
-                <div className="absolute bottom-1/4 right-10 w-32 h-32 rounded-full bg-green-600/10 animate-float-slow"></div>
-
-                <div className="container mx-auto px-4 text-center relative z-10">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in">Ready to Upgrade Your Hardware?</h2>
-                    <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: "100ms" }}>
-                        Contact our team today for expert advice on the best hardware solutions for your specific needs.
-                    </p>
-                    <Button className="bg-gradient-to-r from-blue-600 to-green-500 hover:from-blue-700 hover:to-green-600 text-lg px-8 py-6 h-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
-                        <Phone className="mr-2 h-5 w-5" />
-                        Schedule a Consultation
-                    </Button>
-                </div>
-            </section>
+         
         </MainLayout>
     );
 };
