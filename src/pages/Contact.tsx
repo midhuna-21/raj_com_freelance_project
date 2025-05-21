@@ -97,7 +97,7 @@ const Contact = () => {
                         <ContactCard
                             icon={<Mail className="h-10 w-10" />}
                             title="Email"
-                            details={["info@rjanetworks.com", "rjanetworkllc@gmail.com"]}
+                            details={["rjanetworkllc@gmail.com"]}
                             delay={200}
                         />
                         <ContactCard

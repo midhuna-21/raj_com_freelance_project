@@ -269,7 +269,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                                 </li>
                                 <li className="flex items-center hover:text-white transition-colors duration-300">
                                     <Mail className="mr-2 h-5 w-5" />
-                                    <span>info@rjanetworks.com</span>
+                                    <span>rjanetworkllc@gmail.com</span>
                                 </li>
                             </ul>
                         </div>
