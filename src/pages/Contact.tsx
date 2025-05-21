@@ -85,7 +85,7 @@ const Contact = () => {
                         <ContactCard
                             icon={<MapPin className="h-10 w-10" />}
                             title="Our Location"
-                            details={["Raj Computer System PO Box: 111013 , Dubai"]}
+                            details={["Rj Computer System PO Box: 111013 , Dubai"]}
                             delay={0}
                         />
                         <ContactCard
@@ -97,7 +97,7 @@ const Contact = () => {
                         <ContactCard
                             icon={<Mail className="h-10 w-10" />}
                             title="Email"
-                            details={["info@rajnetworks.com", "rjanetworkllc@gmail.com"]}
+                            details={["info@rjnetworks.com", "rjanetworkllc@gmail.com"]}
                             delay={200}
                         />
                         <ContactCard

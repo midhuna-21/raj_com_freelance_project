@@ -262,7 +262,7 @@ const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6 animate-fade-in">Premium Hardware Solutions for Your Business</h2>
                         <p className="text-xl text-gray-300 text-center mb-12 animate-fade-in" style={{ animationDelay: "200ms" }}>
-                            RAJ Computer System & Hardware Trading LLC delivers top-tier computing infrastructure tailored for business-critical operations. We specialize in high-performance servers, advanced workstations, networking solutions, and essential IT components. Our commitment to quality ensures that your business runs on a stable, efficient, and future-ready foundation.
+                            RJ Computer System & Hardware Trading LLC delivers top-tier computing infrastructure tailored for business-critical operations. We specialize in high-performance servers, advanced workstations, networking solutions, and essential IT components. Our commitment to quality ensures that your business runs on a stable, efficient, and future-ready foundation.
                         </p>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -568,7 +568,7 @@ const [selectedCategory, setSelectedCategory] = useState<number | null>(null);
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto mb-12 text-center">
                         <div className="inline-block px-3 py-1 bg-blue-900/50 text-blue-400 rounded-full text-sm font-medium mb-4 border border-blue-700/50 animate-pulse-slow">
-                            Why Choose RAJ Hardware
+                            Why Choose RJ Hardware
                         </div>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 animate-fade-in">Superior Hardware Solutions</h2>
                         <p className="text-xl text-gray-300 animate-fade-in" style={{ animationDelay: "200ms" }}>
