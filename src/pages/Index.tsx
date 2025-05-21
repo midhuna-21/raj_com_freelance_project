@@ -132,14 +132,13 @@ const Index = () => {
     icon: <Server className="h-8 w-8" />,
     description: "Portable storage device for transferring and storing data.",
     image: "/images/products/USB.png",
-    popular: true,
   },
   {
     id: 14,
     name: "Fiber Optic Cable",
     icon: <Network className="h-8 w-8" />,
     description: "High-speed cable for transmitting data over long distances with low loss.",
-    image: "/images/products/fiber-optic-cable.jpg",
+    image: "/images/products/fiber-optic-cable.png",
     popular: false,
   },
   {
@@ -168,11 +167,10 @@ const Index = () => {
   },
   {
     id: 18,
-    name: "Headphones",
+    name: "Laser Printer",
     icon: <Mouse className="h-8 w-8" />,
-    description: "Audio device worn on the ears for listening to sound.",
-    image: "/images/products/headphones.png",
-    popular: true,
+    description: "High-speed printer ideal for producing sharp text and graphics efficiently.",
+    image: "/images/products/laser-printer.png",
   },
   {
     id: 19,
@@ -180,7 +178,6 @@ const Index = () => {
     icon: <Mouse className="h-8 w-8" />,
     description: "Flat control surface that responds to finger movement.",
     image: "/images/products/touchpad.webp",
-    popular: true,
   },
   {
     id: 20,
@@ -188,7 +185,6 @@ const Index = () => {
     icon: <Mouse className="h-8 w-8" />,
     description: "Device for projecting images or videos onto a surface.",
     image: "/images/products/projector.webp",
-    popular: true,
   },
   
 ];
